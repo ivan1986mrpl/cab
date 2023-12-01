@@ -1,0 +1,50 @@
+.footer {
+    background-color: #222F33;
+    padding-top: 2.0625rem;
+    padding-bottom: 2.0625rem;
+    &__container {
+        display: grid;
+        column-gap: 0.9375rem;
+        row-gap: 1.25rem;
+        color: $secondColor;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__mail {
+        font-size: 0.75rem;
+        font-weight: 500;
+        line-height: 1.16; /* 14/12 */
+    }
+
+    &__logo {
+        justify-self: center;
+    }
+
+    &__menu {
+        justify-self: end;
+    }
+}
+.menu-footer {
+	display: flex;
+	gap: 1.875rem;
+	align-items: center;
+    &__item {
+    }
+
+    &__link {
+        color: $secondColor;
+        font-size: 0.75rem;
+        font-weight: 500;
+        line-height: 1.16; /* 14/12 */
+    }
+}
+@media (max-width: 37.5em){///600
+    .footer {
+        &__container {
+            grid-template-columns: auto;
+            justify-content: center;
+            text-align: center;
+        }
+    }  
+}

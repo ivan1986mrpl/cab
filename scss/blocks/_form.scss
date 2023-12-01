@@ -1,0 +1,47 @@
+
+
+
+
+
+
+/* 
+Form = блочный тег. action="#" ставим заглушку(решетку), впоследствии тут будет адрес сервера. method="get" передача данных идет прямо в адресной строке, они видны любому пользователю. method="post" передает данные скрытно, используя запрос браузера. для того, чтобы отправлять польше данных, в том числе иметь возможность отправлять картинки, надо использовать method="post" enctype="multipart/form-data".
+
+    input:
+    type="file" = позволяет отправлять вложения.
+    type="checkbox" = квадратная кнопка, позволяющая ставить флажок. у нескольких кнопок должны быть разные значения name.
+    type="radio" = круглая кнопка, позволяет делать выбор или.
+    type="password" = не увидим введенное значение.
+    type="tel" = переключит клавиатуру мобильного устройства на цифровую.
+    type="text" = инпут примет обличие поле ввода. 
+    Обязательно давать какое-то имя name="", 
+    value="" оставляем пустым, введенные данные и будут value,
+    checked = этот атрибут выбирает кнопку сразу активной по умолчанию.
+    placeholder="" = подпись поля. применяется к textarea и input  type="text".
+    disabled = для всех тегов, кроме тега form. не активное, визуально тусклое поле.
+    tabindex="" = переключение по TAB, можно выбирать порядок начиная с 1. Для групп инпутов с типом радио табиндекс должен быть одинаковый.
+    
+    textarea = атрибуты id="" cols="30" rows="10" убираем, будем контролировать размер в css.
+
+    <select name="" id=""></select>
+    <option value=""></option>
+    тег option помещается внутрь тега select. == выпадающий список, где select = коробка, а option = пункты списка. При применеии атрибута multiple выбор станет множественным. атрибут selected назначит какой=то элемент по умолчанию выбранным.
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <input  type="text" name="username" value=""  placeholder="" class="input">
+        <input type="tel">
+        <input type="password">
+        <input type="checked">
+        <input checked type="radio">
+        <input type="file">
+        <textarea name="" cols="30" rows="10"></textarea>
+
+        <select multiple name="color">
+            <option value="white">white</option>
+            <option selected value="black">black</option>
+            <option value="grey">grey</option>
+        </select>
+        <button type="reset">сбросить</button>
+        <button type="submit">отправить</button>
+    </form>
+*/

@@ -1,0 +1,73 @@
+// подключение шрифтов всегда самым первым
+// http://127.0.0.1:5500/  ==liveServer
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+
+// подключаем swiper
+// @import url("https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css");
+
+//обнуление, переменные, миксины
+@import 'base/null';
+@import 'base/variebles';
+// @import 'base/mixins';
+
+$fontFamily: Rubik;
+$fontSize: 0.875rem;//14px
+$textColor: #646D70;
+$secondColor: #FFF;
+
+body {
+    font-family: $fontFamily;
+	font-size: $fontSize;
+    font-weight: 400;
+    color: $textColor;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip; // позволяет избежать горизонтального скролла и может работать с position: sticky
+    //прижимаем footer
+    display: flex;
+    flex-direction: column;
+    .page {
+        flex: 1 1 auto; //позволяем увеличиваться
+    }
+}
+
+[class*='__container'] {
+    max-width: 52.5rem;//810px+15+15=840px
+    padding-left: 0.9375rem;//15px
+    padding-right: 0.9375rem;//15px
+    margin: 0 auto;
+   // box-sizing: border-box;
+}
+.ibg {
+    // aspect-ratio: 325 / 366;//соотношение сторон вместо процентного паддинга добавлять каждоьу конкретному контейнеру. ширина первая325, вторая высота 366
+    position: relative;
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
+
+
+
+
+//подключение общих стилей
+@import 'blocks/title';
+@import 'blocks/button';
+@import 'blocks/form';
+@import 'blocks/hover';
+
+// подключение секций
+@import 'blocks/page';
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'blocks/main-block';
+@import 'blocks/material';
+@import 'blocks/inovate';
+@import 'blocks/info';

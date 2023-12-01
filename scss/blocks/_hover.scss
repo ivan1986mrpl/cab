@@ -1,0 +1,19 @@
+.hover-pd {
+    transition: 0.3s all;
+    @media (any-hover: hover){
+        &:hover {
+            padding-bottom: 0.375rem;
+            border-bottom: 0.0625rem solid #fff;
+        } 
+    }
+}
+
+.hover-button {
+    transition: 0.3s all;
+    @media (any-hover: hover){
+        &:hover {
+            color: #FFF;
+            background-color: #606B74;
+        } 
+    }
+}

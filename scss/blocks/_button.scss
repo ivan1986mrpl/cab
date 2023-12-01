@@ -1,0 +1,16 @@
+.button {
+    padding: 0.625rem 1.3125rem;
+    border-radius: 0.25rem;
+    background-color:  #FFF;
+    color: #606B74;
+    text-align: center;
+
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.16; /* 14/12 */
+}
+@media (max-width: 39.0625em){//625px
+    .button {
+        padding: 0.625rem 0.9375rem;
+    }
+}

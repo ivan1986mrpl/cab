@@ -1,0 +1,222 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+<!-- Заголовок страницы,контейнер для других важных данных(не отображается) -->
+
+<head>
+	<!-- Заголовок страницы в браузере -->
+	<title>Cabins</title>
+	<!-- Подключаем CSS -->
+	<link rel="stylesheet" href="css/style.min.css">
+	<!-- Кодировка страницы -->
+	<meta charset="UTF-8">
+	<!-- Настройки адаптивности страницы  -->
+	<!-- Адаптивность  -->
+	<!-- указывает изначальный и максимальный масштаб и запрещает масштабировать на мобильный устройствах -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- Отключает формирование ссылки у номера телефона на iOS (чтобы айфон не распознавал параграф с классом 'phone' как ссылку на телефон) -->
+	<meta name="format-detection" content="telephone=no">
+
+	<!-- Краткое описание страницы (до 140 символов в атрибуте content)  -->
+	<meta name="description" content="Что такое мета теги и для чего они нужны">
+	<!-- Ключевые слова страницы (не больше 20 слов)  -->
+	<meta name="keywords" content="мета теги, meta, мета теги для seo">
+
+	<!-- Управление доступом поисковых роботов к странице -->
+	<!-- Запрет индексации страницы полностью (значением content может быть одно или несколько свойств. Чтобы раньше времени не попали в поисковую систему) -->
+	<meta name="robots" content="none">
+
+	<!-- Автор страницы -->
+	<meta name="Author" content="Дарт Вейдер">
+	<!-- Авторские права -->
+	<meta name="Copyright" content="Люк Скайуокер">
+	<!-- Адрес автора -->
+	<meta name="Address" content="Татуин, кратер №97">
+
+	<!-- локализация сайта, для русскоязычного сайта ru_RU -->
+	<meta property="og:locale" content="ru_RU">
+	<!-- тип контента, по умолчанию используется article -->
+	<meta property="og:type" content="article">
+	<!-- заголовок страницы, который будет выводится в записи социальной сети -->
+	<meta property="og:title" content="META теги">
+	<!-- описание страницы -->
+	<meta property="og:description" content="Описание страницы про META теги">
+	<!-- ссылка на изображение, которое будет публиковаться в записи -->
+	<meta property="og:image" content="http://fls.guru/meta/img/bg.jpg">
+	<!-- ссылка на текущую страницу -->
+	<meta property="og:url" content="http://fls.guru/meta/ ">
+	<!-- название сайта -->
+	<meta property="og:site_name" content="Фрилансер по жизни">
+
+	<!-- Тип карты, по умолчанию используется summary -->
+	<meta name="twitter:card" content="summary">
+	<!-- Имя/логин автора -->
+	<meta name="twitter:site" content="Жека">
+	<!-- Название страницы -->
+	<meta name="twitter:title" content="META теги">
+	<!-- Описание страницы -->
+	<meta name="twitter:description" content="про META теги">
+	<!-- Cсылка на изображение -->
+	<meta name="twitter:image" content="http://fls.guru/meta/img/bg.jpg">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo"><img src="img/Logo.svg" alt="logo"></a>
+
+				<div class="header__body">
+					<nav class="header__menu menu">
+						<ul class="menu__list">
+							<li class="menu__item hover-pd"><a href="#" class="menu__link">Modellen</a></li>
+							<li class="menu__item hover-pd"><a href="#" class="menu__link">Kopen</a></li>
+							<li class="menu__item hover-pd"><a href="#" class="menu__link">Huren</a></li>
+							<li class="menu__item hover-pd"><a href="#" class="menu__link">Nieuws</a></li>
+						</ul>
+					</nav>
+					<button class="header__button button hover-button" type="button">Contact</button>
+				</div>
+
+			</div>
+		</header>
+
+		<main class="page">
+
+			<section class="page__main-block main-block">
+				<div class="main-block__container">
+					<div class="main-block__content">
+						<div class="main-block__label">Duurzame tiny huisjes</div>
+						<h1 class="main-block__title title title--white">Een ecologisch tiny huisje is zoveel mogelijk
+							opgebouwd uit duurzame natuurlijke materialen</h1>
+					</div>
+					<a href="#" class="main-block__video-link">Bekijk de film</a>
+				</div>
+				<div class="main-block__image">
+					<img src="img/main-block/bg.jpg" alt="background">
+				</div>
+			</section>
+
+			<section class="page__material material">
+				<div class="material__container">
+					<div class="material__content">
+						<h2 class="material__title title">Duurzame materialen</h2>
+						<div class="material__text text">
+							<p>Alle EcoCabins hebben een hoge isolatiewaarde, worden geproduceerd met indien mogelijk
+								duurzame en/of natuurlijke materialen en hebben als opvallende uiterlijke kenmerk de
+								‘ronde hoeken’, mogelijk gemaakt door het specifieke materiaalgebruik. De voordelen van
+								bouwen met hout zijn legio: hout is licht, flexibel, isoleert goed en bouwt snel en
+								efficiënt. </p>
+						</div>
+						<a href="#" class="material__more">Lees meer</a>
+					</div>
+
+					<!-- Slider main container -->
+					<div class="material__slider slider-material swiper">
+						<!-- Additional required wrapper -->
+						<div class="slider-material__wrapper swiper-wrapper">
+							<!-- Slides -->
+							<div class="slider-material__slide swiper-slide">
+								<img src="img/materials/01.jpg" alt="slide">
+							</div>
+							<div class="slider-material__slide swiper-slide">
+								<img src="img/main-block/bg.jpg" alt="slide">
+							</div>
+							<div class="slider-material__slide swiper-slide">
+								<img src="img/materials/01.jpg" alt="slide">
+							</div>
+							<div class="slider-material__slide swiper-slide">
+								<img src="img/main-block/bg.jpg" alt="slide">
+							</div>
+						</div>
+						<!-- If we need pagination -->
+						<div class="slider-material__pagination swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__inovate inovate">
+				<div class="inovate__container">
+					<h2 class="inovate__title title title--white">Innovatie</h2>
+					<div class="inovate__text text">
+						<p>Wij hebben als doel om de EcoCabins voortdurend verder te ontwikkelen en innoveren, zodat de
+							EcoCabins uiteindelijk 100% duurzaam en circulair zijn. Voorwaarde hierbij is dat de
+							EcoCabins betaalbaar blijven. Met behulp van de zon, de wind en de beste isolatie geniet u
+							van.</p>
+						<p>Wij hebben als doel om de EcoCabins voortdurend verder te ontwikkelen en innoveren, zodat de
+							EcoCabins uiteindelijk 100% duurzaam en circulair zijn. Voorwaarde hierbij is dat de
+							EcoCabins betaalbaar blijven. Met behulp van de zon, de wind en de beste isolatie geniet u
+							van.</p>
+					</div>
+				</div>
+			</section>
+
+			<div class="page__info info">
+				<div class="info__container">
+					<div class="info__image">
+						<img src="img/info/1.jpg" alt="bg">
+					</div>
+					<div class="info__content">
+						<article class="info__item">
+							<h4 class="info__title">Hout</h4>
+							<div class="info__text text">
+								<p>De draagconstructies van EcoCabins bestaan uit hout. Hout is duurzaam en.</p>
+							</div>
+						</article>
+						<article class="info__item">
+							<h4 class="info__title">Afwerking</h4>
+							<div class="info__text text">
+								<p>De draagconstructies van EcoCabins bestaan uit hout. Hout is duurzaam en.</p>
+							</div>
+						</article>
+						<article class="info__item">
+							<h4 class="info__title">Stalen onderstel</h4>
+							<div class="info__text text">
+								<p>De draagconstructies van EcoCabins bestaan uit hout. Hout is duurzaam en.</p>
+							</div>
+						</article>
+						<article class="info__item">
+							<h4 class="info__title">Glaswol isolatie</h4>
+							<div class="info__text text">
+								<p>De draagconstructies van EcoCabins bestaan uit hout. Hout is duurzaam en.</p>
+							</div>
+						</article>
+						<article class="info__item">
+							<h4 class="info__title">Triple glas</h4>
+							<div class="info__text text">
+								<p>De draagconstructies van EcoCabins bestaan uit hout. Hout is duurzaam en.</p>
+							</div>
+						</article>
+						<article class="info__item">
+							<h4 class="info__title">Infrarood vloer</h4>
+							<div class="info__text text">
+								<p>De draagconstructies van EcoCabins bestaan uit hout. Hout is duurzaam en.</p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<a href="mailto:info@eco-cabins.com" class="footer__mail hover-pd">info@eco-cabins.com</a>
+				<div class="footer__logo"><img src="img/Logo.svg" alt="logo"></div>
+				<ul class="footer__menu menu-footer">
+					<li class="menu-footer__item">
+						<a href="#" class="menu-footer__link hover-pd">Cookies</a>
+					</li>
+					<li class="menu-footer__item">
+						<a href="#" class="menu-footer__link hover-pd">Privacybeleid</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

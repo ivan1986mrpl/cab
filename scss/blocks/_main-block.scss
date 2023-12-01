@@ -1,0 +1,91 @@
+.main-block {
+    min-height: 100vh;//на всю высоту
+    position: relative;
+    display: flex;
+    &__container {
+        padding-top: 5.625rem;
+        padding-bottom: 3.125rem;
+        position: relative;
+        z-index: 2;//чтобы достать контент наверх
+        flex: 1 1 auto;//чтобы растянулся на всю высоту родителя
+        display: grid;
+        gap: 1.25rem;
+        grid-template-columns: 54.320988% 1fr;
+        align-items: center;       
+    }
+
+    &__content {
+    }
+
+    &__label {
+        color: $secondColor;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.18; /* 19/16 */
+        &:not(:last-child) {
+            margin-bottom: 0.75rem;
+        }
+    }
+
+    &__title {
+    }
+
+    &__video-link {
+        display: flex;
+        align-items: center;
+        gap: 0.625rem;
+        color: $secondColor;
+        font-size: 0.75rem;
+        font-weight: 500;
+        line-height: 1.16; /* 14/12 */
+        &::before {
+            content: '';
+            width: 2rem;
+            height: 2rem;
+            flex: 0 0 2rem;//когда псевдоэлемент вместе с текстом flex, нужно добавлять
+            border-radius: 50%;
+            background: url('../img/main-block/play.svg') left no-repeat;
+        }
+    }
+
+    &__video-icon {
+    }
+
+    &__image {//при position: relative; у .main-block делает изображение фоном
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #000;//для читаемости при адаптиве
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+        }
+    }
+}
+@media (max-width: 43.75em) {
+	.main-block {
+        &__container {
+            grid-template-columns: auto;
+            align-content: center;
+        }
+        &__image {//для читаемости при адаптиве вместе со строкой 60
+            img {
+                opacity: 0.6;
+            }
+        }
+	}
+}
+@media (min-width: 43.75em) {
+	.main-block {
+        &__video-link {
+            justify-self: center;
+        }
+	}
+}
+
